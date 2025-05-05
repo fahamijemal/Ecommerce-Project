@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Register from './pages/Register';
 import Login from './pages/Login'
-
+import Navbar from './components/Navbar';
 
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <Navbar/>
       <div className="app-container">
         <main className='main-container'>
         <Routes>
