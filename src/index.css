@@ -1,3 +1,7 @@
+@import "tailwindcss";
+body{
+  background-color: black;
+}
 /* Base Styles */
 :root {
   --primary-color: #3498db;
@@ -236,10 +240,11 @@ body {
 
 /* Auth Pages Styles */
 .auth-page {
+  background-color: #2d3748;
   max-width: 500px;
   margin: 40px auto;
   padding: 30px;
-  background: white;
+  /* background: white; */
   border-radius: 8px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
@@ -247,7 +252,7 @@ body {
 .auth-page h1 {
   text-align: center;
   margin-bottom: 30px;
-  color: var(--dark-color);
+  color: white;
 }
 
 .form-group {
@@ -370,6 +375,8 @@ body {
       grid-template-columns: 1fr;
     }
   }
-
+  body{
+    background-color: black;
+  }
   /* Footer style */
   

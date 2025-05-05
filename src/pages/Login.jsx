@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -27,6 +28,8 @@ export default function Login() {
   }
 
   return (
+    <>
+    <Navbar/>
     <div className="auth-page">
       <h1>Login</h1>
       {error && <div className="error-message">{error}</div>}
@@ -59,5 +62,6 @@ export default function Login() {
         You don't have an account ? <Link to="/Register">Register here</Link>
       </p>
     </div>
+    </>
   )
 }
