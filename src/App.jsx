@@ -1,4 +1,31 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Footer from './components/Footer';
+import Register from './pages/Register';
+import Login from './pages/Login'
+
+
+import './App.css';
+
+function App() {
+  return (
+    <Router>
+      <div className="app-container">
+        <main className='main-container'>
+        <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        </Routes>
+
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+export default App;
+
+/*export default App;
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
@@ -26,4 +53,4 @@ function App() {
   )
 }
 
-export default App;
+export default App;*/
