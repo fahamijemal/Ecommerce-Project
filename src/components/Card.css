@@ -1,0 +1,37 @@
+.card{
+    border: 1px solid hsl(0,0%,80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px hsla(0,0%,0%,0.1);
+    padding: 20px;
+    margin: 10px;
+    height: 250px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), 
+              url("https://th.bing.com/th/id/OIP.6AwfvMS9Z_ujYPRtHs1fYgHaFb?w=175&h=150&c=6&o=7&cb=iwp1&dpr=1.5&pid=1.7&rm=3") no-repeat center center / cover;
+  }
+  
+  .card .card-image{
+    max-width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    margin-bottom: 10px;
+  
+  }
+  .card .card-title{
+    font-size:xx-large;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+    color: white;
+  }
+  .card .card-text{
+    font-size: larger;
+    font-family: Arial, sans-serif;
+    color: hsl(0,0%, 30%);
+    color: white;
+  }
+  .card:hover{
+    transform: scale(1.05);
+  }

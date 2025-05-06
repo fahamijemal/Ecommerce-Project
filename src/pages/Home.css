@@ -1,0 +1,50 @@
+.cont{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.image{
+    width: 100%;
+}
+.hero{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), 
+              url("https://i.pinimg.com/736x/51/eb/44/51eb44fc2a45da89e5c24cb997cbb828.jpg") no-repeat center center / cover;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+p{
+    color: white;
+    font-size: 15px;
+    padding: 100px;
+    padding-left: 0px;
+}
+.text{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 30px;
+}
+.text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    animation: typing 4s steps(40) forwards, blinkCursor 0.75s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
